@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url(wood.png);
+        }
+        header {
+            background-image: url(bg.jpg);
+            color: white;
+            padding: 100px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        label, input, button {
+            display: block;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 90px;">Royal Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1 style="font-size: 60px;">Welcome to Royal Cafe</h1>
+        <h1><p  style="font-size: 20px;">Experience the best cuisine in town.</p></h1>
+    </section>
+    
+    <section id="menu">
+        <h2 style="font-size: 40px;">Our Menu</h2>
+        <div class="menu-item">
+            <img src="pizza.jpg" width="300px" height="300px"><br>
+             PIZZA - INR 399/-onwards</div>
+        <div class="menu-item">
+            <img src="pasta.jpg" width="300px" height="300px"><br>
+             PASTA - INR 149/-onwards</div>
+        <div class="menu-item">
+            <img src="burger.webp" width="300px" height="300px"><br>
+            BURGER - INR 99/-onwards</div><br>
+            <div class="menu-item">
+                <img src="coffee.png" width="350px" height="350px"><br>
+                COFFEE - INR 129/-onwards
+            </div>
+    </section>
+    
+    <section id="reservation">
+        <h2>Book a Table</h2>
+        <form id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            <button type="submit">Reserve</button>
+        </form>
+        <p id="confirmation"></p>
+    </section>
+    
+    
+</body>
+</html>
